@@ -1,0 +1,112 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --background-1: #FFFFFF;
+  --background-2: #F0F2F5;
+  --background-3: #E4E6E9;
+  --background-4: rgba(0,0,0,0.14);
+  --background-5: rgba(0,0,0,0.054);
+  --space-1: 2.3rem;
+  --space-2: 1.4rem;
+  --space-3: 0.97rem;
+  --space-4: 0.46rem;
+  --space-5: 0.14rem;
+  --primary-1: #0D6EFD;
+  --primary-2: #4a97f0;
+  --primary-3: #308ffc;
+  --primary-4: #0d6dfda5;
+  --primary-5: #0d6dfd6e;
+  --width-1: 963px;
+  --width-2: 492px;
+  --width-3: 369px;
+  --width-4: 256px;
+  --width-5: 128px;
+  --height-1: 234px;
+  --height-2: 128px;
+  --height-3: 68px;
+  --height-4: 46px;
+  --height-5: 34px;
+  --color-1: #242526;
+  --color-2: rgba(0,0,0,0.69);
+  --color-3: rgba(0,0,0,0.56);
+  --color-4: rgba(0,0,0,0.34);
+  --color-5: rgba(0,0,0,0.14);
+  --pcolor-1: #FFFFFF;
+}
+
+input {
+  padding: var(--space-4) var(--space-3);
+  border: 1px solid var(--background-4);
+  outline: none;
+}
+
+input:focus {
+  box-shadow: 0 0 0 0.2rem var(--primary-4);
+}
+
+input[type=checkbox] {
+  width: fit-content !important;
+}
+
+body, main {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+header {
+  width: 100vw;
+  background: var(--background-1);
+  border-bottom: 0.14px solid var(--color-5);
+  height: var(--height-5);
+}
+
+.primary {
+  width: 100vw;
+  height: calc(100vh - var(--height-5));
+  background-color: var(--background-2);
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar {
+  width: 300px;
+  height: calc(100vh - var(--height-5));
+  background-color: var(--background-1);
+  border-right: 0.14px solid var(--color-5);
+}
+
+.sidebar ul {
+  width: 100%;
+  height: fit-content;
+  
+}
+
+.sidebar li {
+  width: 100%;
+  background-color: inherit;
+  padding: var(--space-3) var(--space-2)
+}
+
+.sidebar li:hover {
+  background-color: var(--background-3);
+}
